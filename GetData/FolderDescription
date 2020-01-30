@@ -1,0 +1,8 @@
+File Structure：
+
+1.房屋数据获取(HouseInfoSpider.py,House.csv)
+2.标志性地标信息爬取，这里仅爬取了南宁已开通的地铁线路站台信息(SpecialBudingSpider.py)
+3.使用xGeocoding工具批量获取地铁线路各站点地理坐标.(SpecialBudings_geo.db,SpecialBudings_geo_ok.csv)
+4.对地铁地理信息表进行处理.(SpecialBudingClean.py,SpecialBudings_geo.csv)
+5.计算住房2km以内的地铁站点数量与房屋原始数据进行合并.(distance_range.py,HouseComplete.csv)
+6.对合并后的数据进行数据预处理，转换为可供计算的形式.（Preprocessing.py,HouseData.csv）
